@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cocktel DB</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container">
+        <!-- Search Field  -->
+        <div class="row my-4">
+            <div class="col-md-6 mx-auto">
+                <div class="input-group mb-3">
+                    <input id="input-field" type="text" class="form-control" placeholder="Search Your Juice">
+                    <button class="btn btn-outline-secondary" id="search-button">Search</button>
+                </div>
+                <hr width="50%" class="mx-auto">
+            </div>
+        </div>
+
+        <!-- Juice Details  -->
+        <div id="juice-details" class="row text-dark">
+        </div>
+
+        <!-- Empty warning  -->
+        <div id="empty-error" class="row" style="display: none;">
+            <div class="col">
+                <div class="alert bg-danger text-light">
+                    searchBox a kisu den
+                </div>
+            </div>
+        </div>
+        <!-- Null warning  -->
+        <div id="null-error" class="row" style="display: none;">
+            <div class="col">
+                <div class="alert bg-danger text-light">
+                    Please Enter Valid Juice Related Item
+                </div>
+            </div>
+        </div>
+
+        <!-- Spinner  -->
+        <div id="spinner" class="text-center" style="display: none;">
+            <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Display Items  -->
+        <div id="items-container" class="row text-dark">
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
